@@ -18,12 +18,12 @@ export const OanTuTiReducer = (state = stateDefault, action) => {
   switch (action.type) {
     case "KEO_BUA_BAO": {
       let mangDatCuocUpdate = [...state.mangDatCuoc];
-      mangDatCuocUpdate.map((item, index) => {
+      mangDatCuocUpdate = mangDatCuocUpdate.map((item, index) => {
         if (item.ma === action.maCuoc) {
           return { ...item, datCuoc: true };
         }
         return { ...item, datCuoc: false };
-      });
+      }); 
       state.mangDatCuoc = mangDatCuocUpdate;
       return { ...state };
     }

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
 class Player extends Component {
   render() {
     return (
@@ -35,7 +34,7 @@ class Player extends Component {
             }
 
             return (
-              <div className="col-4">
+              <div key={index} className="col-4">
                 <button
                   style={border}
                   className="btnItem"

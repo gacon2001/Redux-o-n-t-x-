@@ -13,8 +13,6 @@ class KetQua extends Component {
     );
   }
 }
-// bị gì v Vân
-//nhấp nút play game mà ko chạy á H
 const mapStateToProps = (state) => {
     return {
         ketQua: state.OanTuTiReducer.ketQua ,
